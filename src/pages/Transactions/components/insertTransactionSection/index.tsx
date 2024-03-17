@@ -167,7 +167,7 @@ export const InsertTransactionSection = () => {
               pointerEvents="none"
               color="#574E6D"
               fontSize="1.2em"
-              children="$"
+              children="₹"
             />
             <Input
               placeholder="Enter Amount"

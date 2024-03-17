@@ -1,9 +1,9 @@
 import { Text } from "@chakra-ui/react";
 import { CardContainer } from "./styles";
 import { Bank, MinusCircle, Money, PiggyBank } from "@phosphor-icons/react";
-import { TransactionContext } from "../../../../../../context/transactionContext";
+import { TransactionContext } from "../../../../context/transactionContext";
 import { useContext } from "react";
-import { handleAmountIntToFloat } from "../../../../../../utils/fixAmountValue";
+import { handleAmountIntToFloat } from "../../../../utils/fixAmountValue";
 
 interface InfoCardProps {
   type: "Expenses" | "Savings" | "Investments" | "Incomes";
@@ -23,8 +23,8 @@ export const InfoCard = ({ type }: InfoCardProps) => {
   const iconsByTypes = {
     Expenses: <MinusCircle fontSize={70} weight="regular" className="icon" />,
     Incomes: <Money fontSize={70} weight="regular" className="icon" />,
-    Savings: <PiggyBank fontSize={70} weight="regular" className="icon" />,
-    Investments: <Bank fontSize={70} weight="regular" className="icon" />,
+    Savings: <PiggyBank fontSize={70} weight="regular" className="icon" style={{color:"green" }} />,
+    Investments: <Bank fontSize={70} weight="regular" className="icon" style={{color:"red" }}/>,
   };
 
   // Use os valores formatados para exibir
@@ -40,8 +40,7 @@ export const InfoCard = ({ type }: InfoCardProps) => {
   return (
     <CardContainer backgroundColor={type}>
       <Text className="paragraph" color={type}>
-      ₹{handleAmountIntToFloat(renderAmountByType[type])}{" "}
-        {/* Renderiza o valor formatado */}
+        ₹ {handleAmountIntToFloat(renderAmountByType[type])}{" "}
       </Text>
       {icon}{" "}
       <Text className="operationType" fontSize={"lg"}>

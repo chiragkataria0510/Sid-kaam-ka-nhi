@@ -68,15 +68,15 @@ export const ShowMonthlyInfo = () => {
       </Box>
       <Box w={"10%"}>
         <Text className="transactions-title">Incomes</Text>
-        <Text>$ {totalIncomes.toFixed(2)}</Text>
+        <Text>₹ {totalIncomes.toFixed(2)}</Text>
       </Box>
       <Box w={"10%"}>
         <Text className="transactions-title">Expenses</Text>
-        <Text>$ {totalExpenses.toFixed(2)}</Text>
+        <Text>₹ {totalExpenses.toFixed(2)}</Text>
       </Box>
       <Box w={"10%"}>
         <Text className="transactions-title">Balance</Text>
-        <Text>$ {totalBalance.toFixed(2)}</Text>
+        <Text>₹ {totalBalance.toFixed(2)}</Text>
       </Box>
     </TransactionInfoContainer>
   );

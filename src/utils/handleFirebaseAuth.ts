@@ -13,7 +13,7 @@ export function handleLogin(email: string, password: string) {
 
 export function handleSIgnUp(email: string, password: string) {
   createUserWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {})
+    .then((userCredential) => {console.log("userCredential",userCredential)})
     .catch((error) => console.log(error));
 }
 

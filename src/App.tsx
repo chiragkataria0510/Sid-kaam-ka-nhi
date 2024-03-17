@@ -5,7 +5,7 @@ import { AuthContext } from "./context/authenticationContext";
 
 function App() {
   const { isAuthenticaded } = useContext(AuthContext)!;
-  return <>{!isAuthenticaded ? <DashboardPage /> : <LoginPage />}</>;
+  return <>{isAuthenticaded ? <DashboardPage /> : <LoginPage />}</>;
 }
 
 export default App;

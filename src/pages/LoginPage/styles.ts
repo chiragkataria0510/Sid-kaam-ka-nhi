@@ -71,7 +71,7 @@ export const FormContainer = styled.form`
 `;
 
 export const CustomButton = styled(Button)`
-  background-color: ${(props) => props.theme.colors.purple300} !important;
+  background-color: ${(props) => props.theme.colors.purple700} !important;
   color: ${(props) => props.theme.colors.white} !important;
   transition: background-color 0.3s ease-in-out !important;
 

@@ -13,6 +13,7 @@ import {
   ChartLineUp,
   HouseLine,
   SignOut,
+  PiggyBank 
 } from "@phosphor-icons/react";
 import { Sidebar } from "./styles";
 import { handleSignOut } from "../../../../utils/handleFirebaseAuth";
@@ -43,23 +44,22 @@ export const SidebarComponent = ({ user }: User) => {
   return (
     <Sidebar>
       <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
-        <Text
+        {/* <Text
           className="title"
           textAlign={"center"}
           fontSize={"2xl"}
           fontWeight={"bold"}
         >
           MM.
-        </Text>
+        </Text> */}
         <Avatar
           className="sidebar-avatar"
           name="User"
-          src="https://via.placeholder.com/150"
-          marginY={5}
-          size="xl"
-          border="5px solid #fff"
+          src="./src/assets/profile.png"
+          margin={1}
+          size="lg"
+          border="3px solid #fff"
         />
-        <Text>Welcome Back!</Text>
         {user?.email && (
           <Editable
             defaultValue={userName ?? user.email}
@@ -75,7 +75,7 @@ export const SidebarComponent = ({ user }: User) => {
         <HStack
           display={"flex"}
           flexDirection={"column"}
-          marginTop={16}
+          marginTop={6}
           spacing={9}
           cursor={"pointer"}
           className="sidebar-icons"
@@ -88,6 +88,11 @@ export const SidebarComponent = ({ user }: User) => {
           <Link to="/transactions">
             <Tooltip label="Transactions" placement="bottom">
               <ChartLineUp size={32} weight="fill" />
+            </Tooltip>
+          </Link>
+          <Link to="/investment">
+            <Tooltip label="Investment" placement="bottom">
+              <PiggyBank  size={32} weight="fill" />
             </Tooltip>
           </Link>
           <Link to="/graph">

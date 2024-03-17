@@ -21,10 +21,10 @@ export const COLORS = {
   white: "#FFFFFF",
   marine500: "#4B586E",
 
-  purple700: "#43405D",
-  purple500: "#574E6D",
-  purple300: "#A39CB9",
-  purple200: "#C9C5D3",
+  purple700: "#57CC99",
+  purple500: "#0077B6",
+  purple300: "#F4A261",
+  purple200: "#023047",
 
   green300: "#c6d0bc",
   orange300: "#f6d78b",

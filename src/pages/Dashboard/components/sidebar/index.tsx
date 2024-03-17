@@ -21,7 +21,6 @@ export const SidebarComponent = () => {
           size="2xl"
           border="5px solid #fff"
         />
-        <Text>Welcome Back!</Text>
         <Text fontSize="lg" marginTop={1}>
           Diego Baena
         </Text>

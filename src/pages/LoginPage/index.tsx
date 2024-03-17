@@ -15,7 +15,6 @@ import {
   LoginContainer,
 } from "./styles";
 import { useContext, useState } from "react";
-import Image from "../../assets/business.svg";
 import { SignUp } from "./SignUp";
 import { handleLogin, handleSIgnUp } from "../../utils/handleFirebaseAuth";
 import { AuthContext } from "../../context/authenticationContext";
@@ -52,7 +51,8 @@ export const LoginPage = () => {
     <div>
       <LoginContainer>
         <AnimationContainer>
-          <img src={Image} alt="business" />
+          {/* <img src={Image} alt="business" /> */}
+          <img src="./src/assets/logo.png" border="1px solid #fff" />
         </AnimationContainer>
         <FormContainer onSubmit={(e) => handleSubmitLogin(e, signedUp)}>
           <Text textAlign="right">
@@ -66,10 +66,10 @@ export const LoginPage = () => {
                 textTransform={"uppercase"}
                 size="lg"
               >
-                money<strong>map.</strong>
+                Dhan<strong>-Savvy</strong>
               </Heading>
+
               <Text textAlign={"center"} padding="5px 0 40px">
-                Welcome back you've been missed!
               </Text>
               <Stack spacing={3}>
                 <Input

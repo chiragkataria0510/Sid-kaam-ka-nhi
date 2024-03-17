@@ -8,11 +8,11 @@ import {
 } from "@phosphor-icons/react";
 import { ListContainer, SpinnerContainer } from "./styles";
 import { useContext, useEffect, useState } from "react";
-import { handleAmountIntToFloat } from "../../../../../../utils/fixAmountValue";
-import { convertMonthPattern } from "../../../../../../utils/convertMonthPattern";
-import { getAllTransactions } from "../../../../../../data/firebase";
-import { AuthContext } from "../../../../../../context/authenticationContext";
-import { FirebaseDataContext } from "../../../../../../context/firebaseDataContext";
+import { handleAmountIntToFloat } from "../../../../utils/fixAmountValue";
+import { convertMonthPattern } from "../../../../utils/convertMonthPattern";
+import { getAllTransactions } from "../../../../data/firebase";
+import { AuthContext } from "../../../../context/authenticationContext";
+import { FirebaseDataContext } from "../../../../context/firebaseDataContext";
 
 interface IconMap {
   [key: string]: React.ReactNode;

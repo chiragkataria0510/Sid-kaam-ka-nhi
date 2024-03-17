@@ -58,7 +58,7 @@ export const TransactionsTable = () => {
     fetchData();
   }, [userId, setTransactionsArray, setFirebaseData]);
 
-  console.log("getTransactionsFromDb", getTransactionsFromDb);
+  // console.log("getTransactionsFromDb", getTransactionsFromDb);
 
   return (
     <Card padding="20px" borderRadius="5px">
@@ -89,7 +89,7 @@ export const TransactionsTable = () => {
                           </Td>
                           <Td>
                             <Text>
-                              U${" "}
+                              ₹{" "}
                               {handleAmountIntToFloat(
                                 transaction.newTransaction.amount
                               )}
@@ -114,7 +114,7 @@ export const TransactionsTable = () => {
                             <Box>
                               <IconButton
                                 style={{
-                                  backgroundColor: "#574E6D",
+                                  backgroundColor: "#0077B6",
                                   color: "white",
                                 }}
                                 aria-label="Edit transaction"
@@ -123,7 +123,7 @@ export const TransactionsTable = () => {
                               />
                               <IconButton
                                 style={{
-                                  backgroundColor: "#574E6D",
+                                  backgroundColor: "red",
                                   color: "white",
                                 }}
                                 aria-label="Delete transaction"
