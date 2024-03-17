@@ -57,7 +57,7 @@ export const LoginPage = () => {
         <FormContainer onSubmit={(e) => handleSubmitLogin(e, signedUp)}>
           <Text textAlign="right">
             Not a member?{" "}
-            <strong onClick={handleChangeSignIn}>Register now</strong>
+            <strong onClick={handleChangeSignIn}>Register</strong>
           </Text>
           {signedUp ? (
             <Box w="80%" margin={"auto"}>

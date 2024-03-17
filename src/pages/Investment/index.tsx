@@ -10,10 +10,8 @@ import {
   RadioGroup,
   Stack,
   Table,
-  Thead,
   Tbody,
   Tr,
-  Th,
   Td,Spinner 
 } from "@chakra-ui/react";
 export const Investment = () => {
@@ -75,12 +73,7 @@ export const Investment = () => {
           <Box mt={4}>
             <Heading size="md">AI Recommended Investment Plan</Heading>
             <Table variant="striped" colorScheme="teal" mt={2}>
-              {/* <Thead>
-                <Tr>
-                  <Th>Domains</Th>
-                  <Th>Amount</Th>
-                </Tr>
-              </Thead> */}
+        
               <Tbody>
                 <Tr>
                   <Td>Stocks (35%)</Td>

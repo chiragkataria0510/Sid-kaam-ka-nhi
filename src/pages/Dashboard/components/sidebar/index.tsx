@@ -12,7 +12,7 @@ export const SidebarComponent = () => {
     <Sidebar>
       <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
         <Text textAlign={"center"} fontSize={"2xl"} fontWeight={"bold"}>
-          moneymap.
+          Dhan-Savvy.
         </Text>
         <Avatar
           name="Dan Abrahmov"
@@ -22,7 +22,7 @@ export const SidebarComponent = () => {
           border="5px solid #fff"
         />
         <Text fontSize="lg" marginTop={1}>
-          Diego Baena
+          User
         </Text>
         <HStack
           display={"flex"}

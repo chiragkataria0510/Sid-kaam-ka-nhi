@@ -3,7 +3,6 @@ import {
   ArrowCircleDown,
   ArrowCircleUp,
   Bank,
-  Paperclip,
   PiggyBank,
 } from "@phosphor-icons/react";
 import { ListContainer, SpinnerContainer } from "./styles";
@@ -30,7 +29,6 @@ export interface TransactionData {
 }
 
 export const TransactionsList = () => {
-  const hasAttachment = true;
   const { userId } = useContext(AuthContext)!;
   const { setFirebaseData } = useContext(FirebaseDataContext);
 
@@ -68,7 +66,7 @@ export const TransactionsList = () => {
   }, [userId, setFirebaseData]);
 
   if (getTransactionsFromDb?.length === 0) {
-    return <div>Aguardando dados...</div>;
+    return <div>...</div>;
   }
 
   return (
@@ -115,13 +113,7 @@ export const TransactionsList = () => {
                       </Tag>
                     </Box>
                     <Box className="anex-box" minWidth={"15%"}>
-                      {hasAttachment && (
-                        <Paperclip
-                          size={25}
-                          color="#6B6B6B"
-                          cursor={"pointer"}
-                        />
-                      )}
+                 
                       <Text marginLeft={10} fontSize={18}>
                         ₹{" "}
                         {handleAmountIntToFloat(

@@ -5,11 +5,9 @@ import {
   EditableInput,
   EditablePreview,
   HStack,
-  Text,
   Tooltip,
 } from "@chakra-ui/react";
 import {
-  ChartBar,
   ChartLineUp,
   HouseLine,
   SignOut,
@@ -44,14 +42,7 @@ export const SidebarComponent = ({ user }: User) => {
   return (
     <Sidebar>
       <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
-        {/* <Text
-          className="title"
-          textAlign={"center"}
-          fontSize={"2xl"}
-          fontWeight={"bold"}
-        >
-          MM.
-        </Text> */}
+ 
         <Avatar
           className="sidebar-avatar"
           name="User"
@@ -95,11 +86,7 @@ export const SidebarComponent = ({ user }: User) => {
               <PiggyBank  size={32} weight="fill" />
             </Tooltip>
           </Link>
-          <Link to="/graph">
-            <Tooltip label="Graphs" placement="bottom">
-              <ChartBar size={32} weight="fill" />
-            </Tooltip>
-          </Link>
+       
         </HStack>
       </Box>
       <Tooltip label="Log Out" placement="top">

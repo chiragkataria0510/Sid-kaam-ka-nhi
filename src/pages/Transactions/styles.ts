@@ -2,7 +2,7 @@ import { Button } from "@chakra-ui/react";
 import styled from "styled-components";
 
 export const TransactionsContainer = styled.main`
-  width: 80%;
+  width: 100%;
   height: 100%;
   padding: 2rem;
   background-color: ${(props) => props.theme.colors.background};

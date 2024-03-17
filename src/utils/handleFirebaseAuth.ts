@@ -7,7 +7,7 @@ import { auth } from "../data/firebase";
 
 export function handleLogin(email: string, password: string) {
   signInWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {})
+    .then((userCredential) => {console.log("userCredential",userCredential)})
     .catch((error) => console.log(error));
 }
 

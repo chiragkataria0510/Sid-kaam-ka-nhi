@@ -8,7 +8,6 @@ import { auth } from "../../data/firebase";
 import { AuthContext } from "../../context/authenticationContext";
 import { Route, Routes } from "react-router-dom";
 import { Transactions } from "../Transactions";
-import { Graphs }  from "../Graphs";
 import { Investment } from "../Investment";
 
 export const DashboardPage = () => {
@@ -35,14 +34,17 @@ export const DashboardPage = () => {
   return (
     <div>
       <MainContainer>
+
+
         <SidebarComponent user={authUser} />
+        <div style={{overflowY: "scroll",width:"100%", height:"100%"}}>
         <Routes>
           <Route path="/dashboard" element={<DashboardContentSection />} />
           <Route path="/transactions" element={<Transactions />} />
-          <Route path="/graph" element={<Graphs />} />
           <Route path="/investment" element={<Investment />} />
         </Routes>
         <Box className="fill" />
+        </div>
       </MainContainer>
     </div>
   );
